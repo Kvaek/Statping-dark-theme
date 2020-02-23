@@ -7,9 +7,14 @@ HTML,BODY,option {
   	color: $text-color;
 }
 
+.list-group-item:hover {
+  background-color: $color-light;
+  color: $text-hover;
+}
+
 .list-group-item {
-  background-color: $color-normal!important;
-  color: $text-color!important;
+  background-color: $color-normal;
+  color: $light-text-color;
 }
 
 .text-muted {
@@ -28,6 +33,10 @@ span.bg-white {
   background-color: $color-normal!important;
 }
 
+.apexcharts-tooltip {
+    box-shadow: none!important;
+}
+
 .apexcharts-heatmap-rect {
   fill: $color-normal;
   stroke: $color-dark;
@@ -37,24 +46,21 @@ span.bg-white {
   fill: $color-dark;
 }
 
-.apexcharts-xaxistooltip.light {
-    background: $color-normal!important;
-    border: $service-border!important;
-    color: $text-color!important;
-}
-
-.apexcharts-tooltip-title {
-  background: $color-light!important;
+.apexcharts-tooltip.light .apexcharts-tooltip-title {
+  background: #212121!important;
+  border-bottom: 1px solid #424242!important;
 }
 
 .apexcharts-tooltip.light {
-  border: $service-border!important;
-  background: $color-normal!important;
-  fill: $color-normal!important;
-  stroke: $color-dark!important;
-  color: $text-color!important;
+    background: #212121!important;
+    border: #424242!important;
+    color: $text-color!important;
 }
-
+.apexcharts-xaxistooltip.light {
+    background: #212121;
+    border: #424242;
+    color: $text-color;
+}
 
 a {
   color: $primary-color;
@@ -103,16 +109,6 @@ h1.text-black-50, span.text-black-50 {
 
 .group_header {
   color: $text-color;
-}
-
-.service_li {
-  background-color: $color-normal;
-  color: $light-text-color;
-}
-
-.service_li:hover {
-  background-color: $color-light;
-  color: $text-hover;
 }
 
 .table {
