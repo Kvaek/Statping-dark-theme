@@ -1,7 +1,7 @@
 @media (max-width: 767px) {
 
     HTML,BODY {
-        background-color: $sm-background-color;
+        background-color: $background-color;
     }
 
     .sm-container {
@@ -43,7 +43,7 @@
         border: 0;
         border-radius: $sm-border-radius;
         padding: $sm-padding;
-        background-color: $sm-service-background;
+        background-color: $color-normal;
     }
 
     .card-body {

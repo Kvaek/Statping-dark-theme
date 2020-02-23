@@ -1,40 +1,50 @@
 @import 'variables';
 
 
-HTML,BODY {
+HTML,BODY,option {
     background-color: $background-color;
     padding-bottom: 10px;
   	color: $text-color;
 }
 
-option {
-  background-color: #212121!important;
-  color: #ccc!important;
+.text-muted {
+    color: $dark-text-color!important;
 }
 
 span.bg-white {
-  background-color: rgba(255,255,255,0.38)!important;
+  background-color: $dark-text-color!important;
 }
 
 .bg-white {
-  background-color: $service-background!important;
+  background-color: $color-light!important;
 }
 
-.btn-outline-secondary {
-    color: $text-color;
-    border-color: $service-border;
+.bg-light {
+	background-color: $color-normal!important;
 }
 
-.text-black-50 {
+a {
+  color: $primary-color;
+}
+
+h1.text-black-50, span.text-black-50 {
   color: $light-text-color!important;
 }
 
+.text-danger {
+    color: $danger-color!important;
+}
+
+.text-success {
+    color: $success-color!important;
+}
+
 .badge-primary {
-  background-color: $primary-color!important;
+  background-color: $nav-tab-color!important;
 }
 
 .badge-secondary {
-  background-color: $nav-tab-color!important;
+  background-color: $primary-color!important;
 }
 
 .badge-danger {
@@ -43,18 +53,6 @@ span.bg-white {
 
 .badge-success {
   background-color: $success-color!important;
-}
-
-.cardtitle a {
-  color: $primary-color;
-}
-
-.switch label::before {
-  background-color: $service-background!important;
-}
-
-.switch label::after {
-  background-color: $service-hover!important;
 }
 
 .apexcharts-title-text {
@@ -66,7 +64,7 @@ span.bg-white {
 
 .input-group-text {
   color: $text-color;
-  background-color: $service-background!important;
+  background-color: $color-normal!important;
   border: $service-border;
 }
 
@@ -75,24 +73,13 @@ span.bg-white {
 }
 
 .service_li {
-  background-color: $service-background;
+  background-color: $color-normal;
   color: $light-text-color;
 }
 
 .service_li:hover {
-  background-color: $service-hover;
+  background-color: $color-light;
   color: $text-hover;
-}
-
-.nav-link {
-  color: $text-color!important;
-}
-.nav-link-active {
-  color: $light-text-color!important;
-}
-
-.navbar-brand {
-  color: $light-text-color!important;
 }
 
 .table {
@@ -100,18 +87,18 @@ span.bg-white {
 }
 
 .table thead th {
-    border-bottom: 2px solid $service-hover!important;
+    border-bottom: 2px solid $color-light!important;
 }
 
 .table td, .table th {
-    border-top: 1px solid $service-hover!important;
+    border-top: 1px solid $color-light!important;
 }
   
 .container {
     padding-top: 20px;
     padding-bottom: 25px;
     max-width: $max-width;
-	background-color: rgba(255,255,255,0.03)!important;
+	background-color: $color-dark!important;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
@@ -125,14 +112,28 @@ span.bg-white {
 
 .btn {
     border-radius: $global-border-radius;
+	color: $light-text-color;
+    background-color: $color-light;
+    border-color: $color-light;
 }
 
 .online_list .badge {
     margin-top: 0.2rem;
 }
 
+.nav-link {
+  color: $text-color!important;
+}
+.nav-link-active {
+  color: $light-text-color!important;
+}
+
+.navbar-brand {
+  color: $light-text-color!important;
+}
+
 .navbar {
-    background-color: $service-background!important;
+    background-color: $color-normal!important;
     margin-bottom: 30px;
 }
 
@@ -197,7 +198,7 @@ span.bg-white {
 
 .badge {
     color: white;
-  	background-color: $service-hover;
+  	background-color: $color-light;
     border-radius: $global-border-radius;
 }
 
@@ -220,18 +221,18 @@ span.bg-white {
 
 .form-control {
     color: $text-color!important;
-    background-color: $service-background!important;
+    background-color: $color-normal!important;
     border: $service-border;
     border-radius: $global-border-radius;
 }
 
 .form-control:focus {
   color: $light-text-color!important;
-  background-color: $service-hover!important;
+  background-color: $color-light!important;
 }
 
 .card {
-    background-color: $service-background;
+    background-color: $color-normal;
     border: $service-border;
 }
 
@@ -374,7 +375,7 @@ input.inputTags-field:focus {
 }
 
 .nav-pills A {
-    color: #424242;
+    color: $color-light;
 }
 
 .nav-pills I {
@@ -393,7 +394,7 @@ input.inputTags-field:focus {
   padding: 0px;
   font-size: 14px;
   line-height: 1.5;
-  color: #555;
+  color: $color-light;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -455,7 +456,7 @@ input.inputTags-field:focus {
 }
 .switch input + label::before {
   right: 0;
-  background-color: #dee2e6;
+  background-color: $color-normal;
   border-radius: calc(2.375rem * .8);
   transition: 0.2s all;
 }
@@ -465,25 +466,26 @@ input.inputTags-field:focus {
   width: calc(calc(2.375rem * .8) - calc(2px * 2));
   height: calc(calc(2.375rem * .8) - calc(2px * 2));
   border-radius: 50%;
-  background-color: white;
+  background-color: $danger-color;
   transition: 0.2s all;
 }
 .switch input:checked + label::before {
-  background-color: #08d;
+  background-color: $color-normal;
 }
 .switch input:checked + label::after {
   margin-left: calc(2.375rem * .8);
+  background-color: $success-color;
 }
 .switch input:focus + label::before {
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(0, 136, 221, 0.25);
 }
 .switch input:disabled + label {
-  color: #868e96;
+  color: $color-light;
   cursor: not-allowed;
 }
 .switch input:disabled + label::before {
-  background-color: #e9ecef;
+  background-color: $color-light;
 }
 .switch.switch-sm {
   font-size: 0.875rem;

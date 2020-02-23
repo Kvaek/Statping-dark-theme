@@ -4,34 +4,32 @@ $text-color: rgba(255,255,255,0.60);
 $dark-text-color: rgba(255,255,255,0.38);
 $text-hover: rgba(255,255,255,1.0);
 
-/*    Index Page      */
+/*    Colors    */
+$color-light: rgba(255,255,255,0.08);
+$color-normal: rgba(255,255,255,0.05);
+$color-dark: rgba(255,255,255,0.03);
 $background-color: #121212;
-$max-width: 860px;
-
-/*    Status Container   */
-$service-background: rgba(255,255,255,0.05);
-$service-hover: rgba(255,255,255,0.08);
-$service-border: 1px solid rgba(255,255,255,0.125);
-$service-stats-size: 2.3rem;
-
-/*    Button Colors      */
 $success-color: #6abf69;
 $danger-color: #d32f2f;
 $primary-color: #0288d1;
+$nav-tab-color: #388e3c;
+
+/*    Index Page      */
+$max-width: 860px;
+
+/*    Status Container   */
+$service-border: 1px solid rgba(255,255,255,0.125);
+$service-stats-size: 2.3rem;
 
 /*   Footer Settings   */
-$nav-tab-color: #388e3c;
 $footer-display: block;
 
 /*   Global Settings */
 $global-border-radius: 0.2rem;
 
-
 /*   Mobile Settings   */
-$sm-background-color: #121212;
 $sm-border-radius: 0rem;
 
 /*   Mobile Service Container   */
-$sm-service-background: rgba(255,255,255,0.05);
 $sm-padding: 0;
 $sm-service-stats-size: 1.5rem;
