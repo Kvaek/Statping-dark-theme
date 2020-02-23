@@ -7,6 +7,11 @@ HTML,BODY,option {
   	color: $text-color;
 }
 
+.list-group-item {
+  background-color: $color-normal!important;
+  color: $text-color!important;
+}
+
 .text-muted {
     color: $dark-text-color!important;
 }
@@ -20,8 +25,36 @@ span.bg-white {
 }
 
 .bg-light {
-	background-color: $color-normal!important;
+  background-color: $color-normal!important;
 }
+
+.apexcharts-heatmap-rect {
+  fill: $color-normal;
+  stroke: $color-dark;
+}
+
+.apexcharts-heatmap-rect:hover {
+  fill: $color-dark;
+}
+
+.apexcharts-xaxistooltip.light {
+    background: $color-normal!important;
+    border: $service-border!important;
+    color: $text-color!important;
+}
+
+.apexcharts-tooltip-title {
+  background: $color-light!important;
+}
+
+.apexcharts-tooltip.light {
+  border: $service-border!important;
+  background: $color-normal!important;
+  fill: $color-normal!important;
+  stroke: $color-dark!important;
+  color: $text-color!important;
+}
+
 
 a {
   color: $primary-color;
@@ -32,11 +65,11 @@ h1.text-black-50, span.text-black-50 {
 }
 
 .text-danger {
-    color: $danger-color!important;
+  color: $danger-color!important;
 }
 
 .text-success {
-    color: $success-color!important;
+  color: $success-color!important;
 }
 
 .badge-primary {
