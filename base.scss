@@ -4,21 +4,123 @@
 HTML,BODY {
     background-color: $background-color;
     padding-bottom: 10px;
+  	color: $text-color;
 }
 
+option {
+  background-color: #212121!important;
+  color: #ccc!important;
+}
+
+span.bg-white {
+  background-color: rgba(255,255,255,0.38)!important;
+}
+
+.bg-white {
+  background-color: $service-background!important;
+}
+
+.btn-outline-secondary {
+    color: $text-color;
+    border-color: $service-border;
+}
+
+.text-black-50 {
+  color: $light-text-color!important;
+}
+
+.badge-primary {
+  background-color: $primary-color!important;
+}
+
+.badge-secondary {
+  background-color: $nav-tab-color!important;
+}
+
+.badge-danger {
+  background-color: $danger-color!important;
+}
+
+.badge-success {
+  background-color: $success-color!important;
+}
+
+.cardtitle a {
+  color: $primary-color;
+}
+
+.switch label::before {
+  background-color: $service-background!important;
+}
+
+.switch label::after {
+  background-color: $service-hover!important;
+}
+
+.apexcharts-title-text {
+  fill: $light-text-color;
+}
+.apexcharts-subtitle-text {
+  fill: $text-color;
+}
+
+.input-group-text {
+  color: $text-color;
+  background-color: $service-background!important;
+  border: $service-border;
+}
+
+.group_header {
+  color: $text-color;
+}
+
+.service_li {
+  background-color: $service-background;
+  color: $light-text-color;
+}
+
+.service_li:hover {
+  background-color: $service-hover;
+  color: $text-hover;
+}
+
+.nav-link {
+  color: $text-color!important;
+}
+.nav-link-active {
+  color: $light-text-color!important;
+}
+
+.navbar-brand {
+  color: $light-text-color!important;
+}
+
+.table {
+  color: $light-text-color!important;
+}
+
+.table thead th {
+    border-bottom: 2px solid $service-hover!important;
+}
+
+.table td, .table th {
+    border-top: 1px solid $service-hover!important;
+}
+  
 .container {
     padding-top: 20px;
     padding-bottom: 25px;
     max-width: $max-width;
+	background-color: rgba(255,255,255,0.03)!important;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
 .header-title {
-    color: $title-color;
+    color: $text-color;
 }
 
 .header-desc {
-    color: $description-color;
+    color: $dark-text-color;
 }
 
 .btn {
@@ -30,6 +132,7 @@ HTML,BODY {
 }
 
 .navbar {
+    background-color: $service-background!important;
     margin-bottom: 30px;
 }
 
@@ -56,7 +159,7 @@ HTML,BODY {
     font-size: $service-stats-size;
     font-weight: bold;
     display: block;
-    color: $service-stats-color;
+    color: $light-text-color;
 }
 
 .stats_area {
@@ -75,7 +178,7 @@ HTML,BODY {
 
 .lower_canvas SPAN {
     font-size: 1rem;
-    color: $service-description-color
+    color: $light-text-color;
 }
 
 .footer {
@@ -84,16 +187,17 @@ HTML,BODY {
 }
 
 .footer A {
-    color: $footer-text-color;
+    color: $text-color;
     text-decoration: none;
 }
 
 .footer A:HOVER {
-    color: #6d6d6d;
+    color: $light-text-color;
 }
 
 .badge {
     color: white;
+  	background-color: $service-hover;
     border-radius: $global-border-radius;
 }
 
@@ -115,7 +219,15 @@ HTML,BODY {
 }
 
 .form-control {
+    color: $text-color!important;
+    background-color: $service-background!important;
+    border: $service-border;
     border-radius: $global-border-radius;
+}
+
+.form-control:focus {
+  color: $light-text-color!important;
+  background-color: $service-hover!important;
 }
 
 .card {
@@ -128,7 +240,7 @@ HTML,BODY {
 }
 
 .card-body H4 A {
-    color: $service-title;
+    color: $light-text-color;
     text-decoration: none;
 }
 

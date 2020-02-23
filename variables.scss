@@ -1,25 +1,26 @@
+/*    Text colors    */
+$light-text-color: rgba(255,255,255,0.87);
+$text-color: rgba(255,255,255,0.60);
+$dark-text-color: rgba(255,255,255,0.38);
+$text-hover: rgba(255,255,255,1.0);
+
 /*    Index Page      */
-$background-color: #fcfcfc;
+$background-color: #121212;
 $max-width: 860px;
-$title-color: #464646;
-$description-color: #939393;
 
 /*    Status Container   */
-$service-background: #ffffff;
-$service-border: 1px solid rgba(0,0,0,.125);
-$service-title: #444444;
-$service-stats-color: #4f4f4f;
-$service-description-color: #fff;
+$service-background: rgba(255,255,255,0.05);
+$service-hover: rgba(255,255,255,0.08);
+$service-border: 1px solid rgba(255,255,255,0.125);
 $service-stats-size: 2.3rem;
 
 /*    Button Colors      */
-$success-color: #47d337;
-$danger-color: #dd3545;
-$primary-color: #3e9bff;
+$success-color: #6abf69;
+$danger-color: #d32f2f;
+$primary-color: #0288d1;
 
 /*   Footer Settings   */
-$footer-text-color: #8d8d8d;
-$nav-tab-color: #13a00d;
+$nav-tab-color: #388e3c;
 $footer-display: block;
 
 /*   Global Settings */
@@ -27,10 +28,10 @@ $global-border-radius: 0.2rem;
 
 
 /*   Mobile Settings   */
-$sm-background-color: #fcfcfc;
+$sm-background-color: #121212;
 $sm-border-radius: 0rem;
 
 /*   Mobile Service Container   */
-$sm-service-background: #ffffff;
+$sm-service-background: rgba(255,255,255,0.05);
 $sm-padding: 0;
 $sm-service-stats-size: 1.5rem;
