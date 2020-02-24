@@ -15,10 +15,11 @@ HTML,BODY,option {
 .list-group-item {
   background-color: $color-normal;
   color: $light-text-color;
+  margin-bottom: 0px!important;
 }
 
 .text-muted {
-    color: $dark-text-color!important;
+  color: $dark-text-color!important;
 }
 
 span.bg-white {
